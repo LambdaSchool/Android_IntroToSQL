@@ -11,6 +11,22 @@ SELECT * FROM players WHERE first_name='Jimmie' AND last_name='Ryan';
 
 DELETE FROM players WHERE first_name='Jimmie' AND last_name='Ryan';
 
+SELECT * FROM players WHERE first_name='Daniel' AND last_name='Perkins';
+
+UPDATE players
+	SET age=23
+    WHERE first_name='Daniel' AND last_name='Perkins';
+    
+SELECT * FROM players WHERE first_name='Daniel' AND last_name='Perkins';
+    
+SELECT * FROM teams WHERE name='Eagles';
+
+UPDATE teams
+	SET primary_color="Green"
+    WHERE name='Eagles';  
+    
+SELECT * FROM teams WHERE name='Eagles';
+
 SELECT * FROM players JOIN teams ON players.team_id=teams.id;
 
 SELECT * FROM teams JOIN players ON players.team_id=teams.id;
