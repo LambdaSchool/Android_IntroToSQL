@@ -1,1 +1,18 @@
+SELECT * FROM players;
+SELECT * FROM teams;
 
+SELECT last_name FROM players;
+
+SELECT * FROM players WHERE id=2;
+
+SELECT * FROM players WHERE AGE<=23;
+
+SELECT * FROM players WHERE first_name='Jimmie' AND last_name='Ryan';
+
+DELETE FROM players WHERE first_name='Jimmie' AND last_name='Ryan';
+
+SELECT * FROM players JOIN teams ON players.team_id=teams.id;
+
+SELECT * FROM teams JOIN players ON players.team_id=teams.id;
+
+SELECT players.id, players.first_name, players.last_name, players.age, teams.name FROM players JOIN teams ON players.team_id=teams.id;
