@@ -1,0 +1,17 @@
+SELECT * FROM players;
+
+SELECT fave_meat from players;
+
+SELECT * FROM players WHERE hotness>0;
+
+SELECT * FROM players WHERE fave_meat='Long Pig' AND hotness>78;
+
+UPDATE players
+	SET fave_meat='Beef'
+    WHERE first_name='Colonel';
+
+SELECT * FROM players;
+
+DELETE FROM players WHERE hotness>0;
+
+SELECT * FROM players;
