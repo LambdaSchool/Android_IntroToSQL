@@ -1,4 +1,4 @@
-#Website: https://www.db-fiddle.com/f/cP3ht6xyEC2waswNoRUoyF/11
+#Website: https://www.db-fiddle.com/f/cP3ht6xyEC2waswNoRUoyF/14
 
 CREATE TABLE teams (
   id INTEGER PRIMARY KEY,
