@@ -1,0 +1,66 @@
+CREATE TABLE players 
+	(
+     id INTEGER PRIMARY KEY, 
+     first_name TEXT, 
+     last_name INTEGER,
+     age INTEGER
+    );
+    
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Bruce', 'Banner', 20);
+
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Reed', 'Richards', 21);
+            
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Sue', 'Storm', 22);
+            
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Stephen', 'Strange', 23);            
+            
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Peter', 'Parker', 24);       
+            
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Matt', 'Murdock', 25);            
+            
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Pepper', 'Potts', 26);            
+            
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Tony', 'Stark', 27);           
+            
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Scott', 'Summers', 28);            
+            
+INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Loki', 'Odinson', 29);            
+            
+ INSERT INTO players
+        (first_name, last_name, age)
+    VALUES
+            ('Thor', 'Odinson', 30);       
+            
+            
+            
+            
