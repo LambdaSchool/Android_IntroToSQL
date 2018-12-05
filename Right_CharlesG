@@ -1,0 +1,72 @@
+SELECT * FROM players;
+
+SELECT first_name FROM players;
+
+SELECT * FROM players WHERE last_name = 'Odinson';
+
+SELECT * FROM players WHERE age >= 25;
+
+UPDATE players
+	SET last_name = 'Richards'
+	WHERE
+    first_name = 'Sue';
+
+UPDATE players
+	SET age = 31
+	WHERE
+    id = 1;
+    
+UPDATE players
+	SET age = 32
+	WHERE
+    id = 2;
+    
+UPDATE players
+	SET age = 33
+	WHERE
+    id = 3;
+    
+UPDATE players
+	SET age = 34
+	WHERE
+    id = 4; 
+    
+UPDATE players
+	SET age = 35
+	WHERE
+    id = 5;
+    
+UPDATE players
+	SET age = 36
+	WHERE
+    id = 6; 
+    
+UPDATE players
+	SET age = 37
+	WHERE
+    id = 7;
+    
+UPDATE players
+	SET age = 38
+	WHERE
+    id = 8;
+    
+UPDATE players
+	SET age = 39
+	WHERE
+    id = 9;
+    
+UPDATE players
+	SET age = 40
+	WHERE
+    id = 10;
+    
+    
+UPDATE players
+	SET age = 41
+	WHERE
+    id = 11;
+    
+DELETE FROM players WHERE first_name = 'Loki'; 
+    
+SELECT * FROM players;    
