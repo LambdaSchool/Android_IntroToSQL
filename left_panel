@@ -5,7 +5,9 @@ CREATE TABLE players (
   age TEXT,
   shooting INTEGER,
   passing INTEGER,
-  defense INTEGER
+  defense INTEGER,
+  team INTEGER, 
+  FOREIGN KEY (team) REFERENCES teams(id)
   );
   
   INSERT INTO players (id, first_name, last_name, age, shooting, 
