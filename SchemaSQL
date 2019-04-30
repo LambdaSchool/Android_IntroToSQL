@@ -1,0 +1,55 @@
+
+
+
+CREATE TABLE phobias(
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  description TEXT,
+  treatable_with INTEGER,
+  FOREIGN KEY (treatable_with) REFERENCES treatments(id)
+);
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Claustrophobia", "Fear of being in constricted, confined spaces", 2);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Aerophobia", "Fear of flying", 1);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Arachnophobia", "Fear of spiders", 1);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Driving phobia", "Fear of driving a car", 2);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Emetophobia", "Fear of vomiting", 3);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Erythrophobia", "Fear of blushing", 2);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Hypochondria", "Fear of becoming ill", 3);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Zoophobia", "Fear of animals", 1);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Aquaphobia", "Fear of water", 4);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Acrophobia", "Fear of heights", 4);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Blood, injury, and injection (BII) phobia", "Fear of injuries involving blood", 4);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Escalaphobia", "Fear of escalators", 2);
+
+INSERT INTO phobias ( name, description, treatable_with) VALUES ("Tunnel phobia", "Fear of tunnels", 2);
+
+
+CREATE TABLE treatments (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  description TEXT
+  );
+  
+  
+  INSERT INTO treatments (name, description) VALUES ("Exposure therapy", "focuses on changing your response to the object or situation that you fear. Gradual, repeated exposure to the source of your specific phobia and the related thoughts, feelings and sensations may help you learn to manage your anxiety. For example, if you're afraid of elevators, your therapy may progress from simply thinking about getting into an elevator, to looking at pictures of elevators, to going near an elevator, to stepping into an elevator. Next, you may take a one-floor ride, then ride several floors, and then ride in a crowded elevator." );
+  
+INSERT INTO treatments ( name, description) VALUES ("Cognitive behavioral therapy (CBT)", " involves exposure combined with other techniques to learn ways to view and cope with the feared object or situation differently. You learn alternative beliefs about your fears and bodily sensations and the impact they've had on your life. CBT emphasizes learning to develop a sense of mastery and confidence with your thoughts and feelings rather than feeling overwhelmed by them.");
+
+INSERT INTO treatments ( name, description) VALUES ("Beta blockers", "These drugs block the stimulating effects of adrenaline, such as increased heart rate, elevated blood pressure, pounding heart, and shaking voice and limbs that are caused by anxiety.");
+
+INSERT INTO treatments ( name, description) VALUES ("Sedatives", "Medications called benzodiazepines help you relax by reducing the amount of anxiety you feel. Sedatives are used with caution because they can be addictive and should be avoided if you have a history of alcohol or drug dependence.");
+
+
+
+
