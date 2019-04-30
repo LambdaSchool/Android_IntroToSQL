@@ -23,3 +23,8 @@ WHERE first_name = "LeBron";
 
 SELECT * FROM teams
 WHERE id = 2; 
+
+DELETE FROM players 
+WHERE id = 10;
+
+SELECT * FROM players;
