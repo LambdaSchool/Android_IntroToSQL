@@ -52,3 +52,12 @@ VALUES (9, "Al", "Horford", 32, 85, 80, 90, 3);
     passing INTEGER,
     defense INTEGER
     );
+    
+INSERT INTO teams (id, name, location, shooting, passing, defense) 
+VALUES (1, "Los Angeles Lakers", "Los Angeles", 83, 82, 75);
+
+INSERT INTO teams (id, name, location, shooting, passing, defense) 
+VALUES (2, "Golden State Warriors", "Oakland", 97, 83, 86);
+
+INSERT INTO teams (id, name, location, shooting, passing, defense) 
+VALUES (3, "Boston Celtics", "Boston", 88, 83, 85);
