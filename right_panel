@@ -1,0 +1,33 @@
+SELECT * FROM players;
+
+SELECT * FROM teams;
+
+SELECT first_name, last_name, age FROM players; 
+
+SELECT * FROM players
+WHERE id = 1;
+
+SELECT name FROM teams
+WHERE shooting > 85;
+
+UPDATE players 
+SET passing = 95
+WHERE first_name LIKE "%LeBron";
+
+UPDATE teams
+SET location = "San Francisco"
+WHERE id = 2;
+
+SELECT * FROM players
+WHERE first_name = "LeBron"; 
+
+SELECT * FROM teams
+WHERE id = 2; 
+
+DELETE FROM players 
+WHERE id = 10;
+
+SELECT players.id AS players_id, first_name, last_name, 
+teams.id AS team_id, name FROM players
+JOIN teams ON players.team = teams.id; 
+

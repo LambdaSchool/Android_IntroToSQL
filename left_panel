@@ -1,0 +1,70 @@
+CREATE TABLE players (
+  id INTEGER PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT,
+  age TEXT,
+  shooting INTEGER,
+  passing INTEGER,
+  defense INTEGER,
+  team INTEGER, 
+  FOREIGN KEY (team) REFERENCES teams(id)
+  );
+  
+  INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (1, "LeBron", "James", 34, 85, 90, 75, 1);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (2, "Kyle", "Kuzma", 23, 85, 75, 80, 1);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (3, "Brandon", "Ingram", 21, 80, 70, 85, 1);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (4, "Kevin", "Durant", 30, 95, 75, 90, 2);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (5, "Stephen", "Curry", 31, 99, 90, 75, 2);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (6, "Klay", "Thompson", 29, 98, 83, 93, 2);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (7, "Kyrie", "Irving", 27, 95, 90, 80, 3);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (8, "Jayson", "Tatum", 21, 85, 80, 85, 3);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (9, "Al", "Horford", 32, 85, 80, 90, 3);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (10, "Lonzo", "Ball", 21, 70, 90, 90, 1);
+
+  
+    CREATE TABLE teams (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    location TEXT,
+    shooting INTEGER,
+    passing INTEGER,
+    defense INTEGER
+    );
+    
+INSERT INTO teams (id, name, location, shooting, passing, defense) 
+VALUES (1, "Los Angeles Lakers", "Los Angeles", 83, 82, 75);
+
+INSERT INTO teams (id, name, location, shooting, passing, defense) 
+VALUES (2, "Golden State Warriors", "Oakland", 97, 83, 86);
+
+INSERT INTO teams (id, name, location, shooting, passing, defense) 
+VALUES (3, "Boston Celtics", "Boston", 88, 83, 85);
