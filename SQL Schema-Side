@@ -1,0 +1,46 @@
+CREATE TABLE players
+(
+  id INTEGER PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT,
+  age INTEGER
+);
+
+INSERT INTO players
+	(first_name, last_name, age)
+VALUES
+	('Jeff', 'Ryan', 32);
+    
+INSERT INTO players
+	(first_name, last_name, age)
+VALUES
+	('Billy', 'McKenzie', 24);
+    
+INSERT INTO players
+	(first_name, last_name, age)
+VALUES
+	('Chuck', 'Williamson', 29);
+  
+
+CREATE TABLE teams
+(
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  location TEXT,
+  coach TEXT
+);
+
+INSERT INTO teams
+	(name, location, coach)
+VALUES
+	('The Jackhammers', 'Indianapolis', 'John Murphy');
+
+INSERT INTO teams
+	(name, location, coach)
+VALUES
+	('Windors', 'Chicago', 'Timothy Pederson');
+    
+INSERT INTO teams
+	(name, location, coach)
+VALUES
+	('Nighthawks', 'Phoenix', 'Craig Turner');
