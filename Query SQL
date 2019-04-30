@@ -1,0 +1,29 @@
+/*Assignment part 4*/
+/*4.3*/
+SELECT * FROM phobias;
+/*4.5*/
+SELECT name FROM treatments;
+/*4.7*/
+SELECT * FROM phobias WHERE name LIKE "%chondria%";
+/*4.9*/
+SELECT * FROM phobias WHERE name LIKE "%ch%";
+
+/*Assignment part 5*/
+UPDATE phobias 
+SET description = "Paranoia of always being sick" 
+WHERE name = "Hypochondria";
+SELECT * FROM phobias;
+
+/*Assignment part 6*/
+DELETE FROM phobias where name = "Blood, injury, and injection (BII) phobia";
+SELECT * FROM phobias;
+
+/*Assigment part 7*/
+
+SELECT 
+phobias.id AS phobia_id, 
+phobias.name AS phobia_name, 
+phobias.description, 
+treatments.name AS treatments_name, 
+treatments.description AS treatment_description 
+FROM phobias JOIN treatments ON phobias.treatable_with = treatments.id
