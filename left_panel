@@ -1,1 +1,10 @@
-
+CREATE TABLE players (
+  id INTEGER PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT,
+  age TEXT,
+  shooting INTEGER,
+  passing INTEGER,
+  defense INTEGER
+  );
+  
