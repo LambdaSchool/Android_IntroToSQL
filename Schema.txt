@@ -1,0 +1,35 @@
+CREATE TABLE Players (
+  id INTEGER NOT NULL,
+  first_name TEXT NOT NULL,
+  last_name TEXT NOT NULL,
+  age INTEGER NOT NULL,
+  team_id INTEGER,
+  PRIMARY KEY (id),
+  FOREIGN KEY (team_id) REFERENCES Teams(id)
+);
+  
+CREATE TABLE Teams (
+  id INTEGER NOT NULL,
+  name TEXT NOT NULL,
+  age TEXT NOT NULL,
+  PRIMARY KEY (id)
+  
+);
+
+INSERT INTO Teams (name, age)
+VALUES("test_team0", 1);
+
+INSERT INTO Teams (name, age)
+VALUES("test_team1", 1);
+
+INSERT INTO Teams (name, age)
+VALUES("test_team2", 1);
+
+INSERT INTO Players (first_name, last_name, age, team_id)
+VALUES("test_fn0", "test_ln0", 1, 0);
+
+INSERT INTO Players (first_name, last_name, age, team_id)
+VALUES("test_fn1", "test_ln1", 1, 1);
+
+INSERT INTO Players (first_name, last_name, age, team_id)
+VALUES("test_fn2", "test_ln2", 1, 2);
