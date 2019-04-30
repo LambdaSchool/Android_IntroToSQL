@@ -8,6 +8,42 @@ CREATE TABLE players (
   defense INTEGER
   );
   
+  INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (1, "LeBron", "James", 34, 85, 90, 75, 1);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (2, "Kyle", "Kuzma", 23, 85, 75, 80, 1);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (3, "Brandon", "Ingram", 21, 80, 70, 85, 1);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (4, "Kevin", "Durant", 30, 95, 75, 90, 2);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (5, "Stephen", "Curry", 31, 99, 90, 75, 2);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (6, "Klay", "Thompson", 29, 98, 83, 93, 2);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (7, "Kyrie", "Irving", 27, 95, 90, 80, 3);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (8, "Jayson", "Tatum", 21, 85, 80, 85, 3);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (9, "Al", "Horford", 32, 85, 80, 90, 3);
+  
     CREATE TABLE teams (
     id INTEGER PRIMARY KEY,
     name TEXT,
