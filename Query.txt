@@ -1,0 +1,23 @@
+SELECT * FROM Teams;
+
+SELECT * FROM Players;
+
+SELECT first_name FROM Players;
+
+SELECT * FROM Players
+WHERE first_name == "test_fn0" OR first_name == "test_fn1";
+
+UPDATE Players
+SET first_name = "test_fn0_updated"
+WHERE first_name == "test_fn0";
+
+SELECT * FROM Players;
+
+DELETE FROM Players WHERE first_name == "test_fn0_updated";
+
+SELECT * FROM Players;
+
+SELECT * 
+FROM Players
+JOIN Teams
+ON Players.team_id = Teams.id;
