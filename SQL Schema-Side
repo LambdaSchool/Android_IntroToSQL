@@ -3,23 +3,25 @@ CREATE TABLE players
   id INTEGER PRIMARY KEY,
   first_name TEXT,
   last_name TEXT,
-  age INTEGER
+  age INTEGER,
+  team TEXT,
+  FOREIGN KEY(team) REFERENCES teams(name)
 );
 
 INSERT INTO players
-	(first_name, last_name, age)
+	(first_name, last_name, age, team)
 VALUES
-	('Jeff', 'Ryan', 32);
+	('Jeff', 'Ryan', 32, 'The Jackhammers');
     
 INSERT INTO players
-	(first_name, last_name, age)
+	(first_name, last_name, age, team)
 VALUES
-	('Billy', 'McKenzie', 24);
+	('Billy', 'McKenzie', 24, 'Windors');
     
 INSERT INTO players
-	(first_name, last_name, age)
+	(first_name, last_name, age, team)
 VALUES
-	('Chuck', 'Williamson', 29);
+	('Chuck', 'Williamson', 29, 'The Jackhammers');
   
 
 CREATE TABLE teams
