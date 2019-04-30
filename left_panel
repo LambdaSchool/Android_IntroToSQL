@@ -8,3 +8,11 @@ CREATE TABLE players (
   defense INTEGER
   );
   
+    CREATE TABLE teams (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    location TEXT,
+    shooting INTEGER,
+    passing INTEGER,
+    defense INTEGER
+    );
