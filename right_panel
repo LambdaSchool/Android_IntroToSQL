@@ -27,4 +27,7 @@ WHERE id = 2;
 DELETE FROM players 
 WHERE id = 10;
 
-SELECT * FROM players;
+SELECT players.id AS players_id, first_name, last_name, 
+teams.id AS team_id, name FROM players
+JOIN teams ON players.team = teams.id; 
+
