@@ -1,0 +1,15 @@
+SELECT * FROM players;
+
+SELECT * FROM teams WHERE id=1;
+
+SELECT * FROM players WHERE id=1 OR id=2;
+
+UPDATE players SET age=34 WHERE id=1;
+
+SELECT first_name, age FROM players WHERE id=1;
+
+DELETE FROM teams WHERE id=3;
+
+SELECT * FROM teams;
+
+SELECT players.first_name AS player_first_name, players.last_name AS player_last_name, teams.name AS team, teams.location AS location FROM players JOIN teams WHERE players.team=teams.name;
