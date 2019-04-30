@@ -1,0 +1,28 @@
+CREATE TABLE players(
+  id INTEGER PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT,
+  age INTEGER,
+  player_key INTEGER,
+  FOREIGN KEY (player_key) REFERENCES teams(team_key)
+);
+
+INSERT INTO players(id, first_name, last_name, age, player_key) VALUES(1, "Sam", "Jackson", 86, 1);
+
+INSERT INTO players(id, first_name, last_name, age, player_key) VALUES(2, "Chris", "Evans", 34, 1);
+
+INSERT INTO players(id, first_name, last_name, age, player_key) VALUES(3, "Peter", "Parker", 18, 1);
+
+INSERT INTO players(id, first_name, last_name, age, player_key) VALUES(4, "Mark", "Ruffulo", 35, 2);
+
+CREATE TABLE teams(
+   team_name TEXT,
+   team_level INTEGER,
+   team_ranking INTEGER,
+  team_key INTEGER
+);
+
+INSERT INTO teams(team_name, team_level, team_ranking, team_key) VALUES("Avengers", 21, 1, 1);
+
+
+INSERT INTO teams(team_name, team_level, team_ranking, team_key) VALUES("Actors", 2, 2, 2);
