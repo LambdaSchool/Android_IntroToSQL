@@ -43,6 +43,11 @@ VALUES (8, "Jayson", "Tatum", 21, 85, 80, 85, 3);
 INSERT INTO players (id, first_name, last_name, age, shooting, 
                      passing, defense, team)
 VALUES (9, "Al", "Horford", 32, 85, 80, 90, 3);
+
+INSERT INTO players (id, first_name, last_name, age, shooting, 
+                     passing, defense, team)
+VALUES (10, "Lonzo", "Ball", 21, 70, 90, 90, 1);
+
   
     CREATE TABLE teams (
     id INTEGER PRIMARY KEY,
