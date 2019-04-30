@@ -1,0 +1,15 @@
+SELECT * FROM players;
+
+SELECT first_name FROM players;
+
+SELECT  * FROM players WHERE id=1;
+
+SELECT * FROM players WHERE first_name LIKE "B%";
+
+UPDATE players SET last_name="Jeter" WHERE last_name LIKE "jet%";
+SELECT * FROM players;
+
+DELETE  FROM players WHERE last_name LIKE "Jet%";
+SELECT * FROM players;
+
+SELECT * FROM players JOIN teams ON teams.id = players.team;
