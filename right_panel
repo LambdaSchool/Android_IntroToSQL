@@ -9,3 +9,17 @@ WHERE id = 1;
 
 SELECT name FROM teams
 WHERE shooting > 85;
+
+UPDATE players 
+SET passing = 95
+WHERE first_name LIKE "%LeBron";
+
+UPDATE teams
+SET location = "San Francisco"
+WHERE id = 2;
+
+SELECT * FROM players
+WHERE first_name = "LeBron"; 
+
+SELECT * FROM teams
+WHERE id = 2; 
