@@ -1,0 +1,25 @@
+CREATE TABLE players(
+  id INTEGER PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT,
+  age INTEGER,
+  team INTEGER,
+  FOREIGN KEY (team) REFERENCES teams(id));
+  
+INSERT INTO players(id,first_name,last_name,age,team) VALUES (1,"Babe", "Ruth", 100,1);
+INSERT INTO players(id,first_name,last_name,age,team) VALUES (2,"Barry", "Bonds", 100,4);
+INSERT INTO players(id,first_name,last_name,age,team) VALUES (3,"Jackie", "Robinson", 100,2);
+INSERT INTO players(id,first_name,last_name,age,team) VALUES (4,"Derek", "jeter", 100,1);
+
+  
+CREATE TABLE teams(
+  id INTEGER,
+  name TEXT,
+  colors TEXT,
+  home_city TEXT);
+  
+  INSERT INTO teams(id,name,colors,home_city) VALUES(1,"Yankees","Blue and ?", "New York");
+  INSERT INTO teams(id,name,colors,home_city) VALUES(2,"Dodgers","I have no clue", "Brooklyn");
+  INSERT INTO teams(id,name,colors,home_city) VALUES(3,"Angels","Red and white", "Los Angeles");
+  INSERT INTO teams(id,name,colors,home_city) VALUES(4,"Pirates", "Black and white", "Pittsburgh");
+  
