@@ -1,0 +1,83 @@
+#Website: https://www.db-fiddle.com/f/cP3ht6xyEC2waswNoRUoyF/14
+
+CREATE TABLE teams (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  hometown TEXT,
+  primary_color TEXT,
+  secondary_color TEXT
+);
+
+CREATE TABLE players (
+  id INTEGER PRIMARY KEY,
+  first_name TEXT,
+  last_name TEXT,
+  age INTEGER,
+  team_id INTEGER,
+ FOREIGN KEY(team_id) REFERENCES teams(id)
+);
+
+#Insert Teams
+INSERT INTO teams
+  	(name, hometown, primary_color, secondary_color)
+  VALUES
+  	("Eagles", "Ridgefield, KS", "Red", "Blue");
+    
+    
+INSERT INTO teams
+  	(name, hometown, primary_color, secondary_color)
+  VALUES
+  	("Hornets", "Aberdeen, WA", "Black", "Gold");
+    
+
+
+#Insert Players
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Daniel", "Perkins", "21", 1);
+    
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Jimmie", "Hansen", "19", 1);
+
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Edward", "Lewis", "25", 2);
+
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Brandon", "Rodriguez", "28", 1);
+    
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Oscar", "Hansen", "29", 2);
+    
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Jerome", "Lewis", "24", 2);
+    
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Mathew", "Collins", "25", 2);
+    
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Troy", "Figueroa", "26", 1);
+
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Jimmie", "Ryan", "22", 2);
+    
+INSERT INTO players
+  	(first_name, last_name, age, team_id)
+  VALUES
+  	("Ernesto", "Delgado", "20", 1);
