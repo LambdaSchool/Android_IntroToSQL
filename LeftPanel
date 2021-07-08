@@ -1,0 +1,40 @@
+CREATE TABLE teams(
+	id INTEGER PRIMARY KEY,
+  	team_name TEXT,
+  	location TEXT,
+  	CONFERENCE TEXT
+);
+
+CREATE TABLE players(
+	id INTEGER PRIMARY KEY,
+  	first_name TEXT,
+  	last_name TEXT,
+  	age INTEGER,
+  	position TEXT,
+  	team_id TEXT ,
+  	FOREIGN KEY(team_id) REFERENCES teams(id)
+);
+
+INSERT INTO teams (team_name, location, CONFERENCE)
+VALUES('Seattle Seahawks', 'Seattle, Washington', 'NFC');
+
+INSERT INTO teams (team_name, location, CONFERENCE)
+VALUES('Kansas City Chiefs', 'Kansas City, Missouri', 'AFC');
+
+INSERT INTO teams (team_name, location, CONFERENCE)
+VALUES('Green Bay Packers', 'Green Bay, Wisconsin', 'NFC');
+
+INSERT INTO teams (team_name, location, CONFERENCE)
+VALUES('Chicago Bears', 'Chicago, Illinois', 'NFC');
+
+INSERT INTO players (first_name, last_name, age, position, team_id)
+VALUES('Russell', 'Wilson', 30, 'QB', 1);
+
+INSERT INTO players (first_name, last_name, age, position, team_id)
+VALUES('Aaron', 'Rodgers', 35, 'QB', 3);
+
+INSERT INTO players (first_name, last_name, age, position, team_id)
+VALUES('Patrick', 'Mahomes', 23, 'QB', 2);
+
+INSERT INTO players (first_name, last_name, age, position, team_id)
+VALUES('Khalil', 'Mack', 27, 'Defensive End', 4);
